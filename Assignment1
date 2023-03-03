@@ -1,3 +1,4 @@
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -16,22 +17,36 @@ df = pd.read_csv("salary.csv")
 plt.figure()
 
 # plot line chart male vs female salary for their occupations
-plt.plot(df["year"], df["Managers & Administrators (Including Working Proprietors) - Male"], label="Manager-Male")
-plt.plot(df["year"], df["Managers & Administrators (Including Working Proprietors) - Female"], label="Manager-Female")
-plt.plot(df["year"], df["Service & Sales Workers - Male"], label="Service-Male")
-plt.plot(df["year"], df["Service & Sales Workers - Female"], label="Service-Female")
-plt.plot(df["year"], df["Cleaners, Labourers & Related Workers - Male"], label="Cleaner-Male")
-plt.plot(df["year"], df["Cleaners, Labourers & Related Workers - Female"], label="Cleaner-Female")
+plt.plot(df["year"], df["Managers & Administrators (Including Working \
+                        Proprietors) - Male"], label="Manager-Male")
+plt.plot(df["year"], df["Managers & Administrators (Including Working \
+                        Proprietors) - Female"], label="Manager-Female")
+plt.plot(df["year"], df["Service & Sales Workers - Male"], label=\
+         "Service-Male")
+plt.plot(df["year"], df["Service & Sales Workers - Female"], label="Service\
+         -Female")
+plt.plot(df["year"], df["Cleaners, Labourers & Related Workers - Male"], \
+         label="Cleaner-Male")
+plt.plot(df["year"], df["Cleaners, Labourers & Related Workers - Female"], \
+         label="Cleaner-Female")
 plt.plot(df["year"], df["Professionals - Male"], label="Manager-Male")
 plt.plot(df["year"], df["Professionals - Female"], label="Manager-Female")
-plt.plot(df["year"], df["Associate Professionals & Technicians - Male"], label="Service-Male")
-plt.plot(df["year"], df["Associate Professionals & Technicians - Female"], label="Service-Female")
-plt.plot(df["year"], df["Clerical Support Workers - Male"], label="Cleaner-Male")
-plt.plot(df["year"], df["Clerical Support Workers - Female"], label="Cleaner-Female")
-plt.plot(df["year"], df["Craftsmen & Related Trades Workers - Male"], label="Cleaner-Female")
-plt.plot(df["year"], df["Craftsmen & Related Trades Workers - Female"], label="Cleaner-Female")
-plt.plot(df["year"], df["Plant & Machine Operators & Assemblers - Male"], label="Cleaner-Female")
-plt.plot(df["year"], df["Plant & Machine Operators & Assemblers - Female"], label="Cleaner-Female")
+plt.plot(df["year"], df["Associate Professionals & Technicians - Male"], \
+         label="Service-Male")
+plt.plot(df["year"], df["Associate Professionals & Technicians - Female"], \
+         label="Service-Female")
+plt.plot(df["year"], df["Clerical Support Workers - Male"], \
+         label="Cleaner-Male")
+plt.plot(df["year"], df["Clerical Support Workers - Female"], \
+         label="Cleaner-Female")
+plt.plot(df["year"], df["Craftsmen & Related Trades Workers - Male"], \
+         label="Cleaner-Female")
+plt.plot(df["year"], df["Craftsmen & Related Trades Workers - Female"], \
+         label="Cleaner-Female")
+plt.plot(df["year"], df["Plant & Machine Operators & Assemblers - Male"], \
+         label="Cleaner-Female")
+plt.plot(df["year"], df["Plant & Machine Operators & Assemblers - Female"], \
+         label="Cleaner-Female")
 
 # set labels and show the legend
 plt.xlabel("Year")
@@ -43,8 +58,10 @@ plt.show()
 
 # Create stacked area chart
 plt.figure()
-plt.stackplot(df["year"], df["Managers & Administrators (Including Working Proprietors) - Male"])
-plt.stackplot(df["year"], df["Managers & Administrators (Including Working Proprietors) - Female"])
+plt.stackplot(df["year"], df["Managers & Administrators (Including Working \
+                             Proprietors) - Male"])
+plt.stackplot(df["year"], df["Managers & Administrators (Including Working \
+                             Proprietors) - Female"])
 plt.stackplot(df["year"], df["Service & Sales Workers - Male"])
 plt.stackplot(df["year"], df["Service & Sales Workers - Female"])
 plt.stackplot(df["year"], df["Cleaners, Labourers & Related Workers - Male"])
@@ -58,13 +75,15 @@ plt.stackplot(df["year"], df["Clerical Support Workers - Female"])
 plt.stackplot(df["year"], df["Craftsmen & Related Trades Workers - Male"])
 plt.stackplot(df["year"], df["Craftsmen & Related Trades Workers - Female"])
 plt.stackplot(df["year"], df["Plant & Machine Operators & Assemblers - Male"])
-plt.stackplot(df["year"], df["Plant & Machine Operators & Assemblers - Female"])
+plt.stackplot(df["year"], df["Plant & Machine Operators & Assemblers - Female"\
+                             ])
 
 # set labels and show the legend
 plt.xlabel("Year")
 plt.ylabel("Salary")
 plt.legend(['Managers & Administrators (Including Working Proprietors) - Male',
-            'Managers & Administrators (Including Working Proprietors) - Female',
+            'Managers & Administrators (Including Working Proprietors) - \
+                Female',
             'Service & Sales Workers - Male',
             'Service & Sales Workers - Female', 
             'Cleaners, Labourers & Related Workers - Male', 
@@ -88,22 +107,36 @@ plt.show()
 plt.figure()
 
 # plot scatter chart male vs female salary for their occupations
-plt.scatter(df["year"], df["Managers & Administrators (Including Working Proprietors) - Male"], label="Manager-Male")
-plt.scatter(df["year"], df["Managers & Administrators (Including Working Proprietors) - Female"], label="Manager-Female")
-plt.scatter(df["year"], df["Service & Sales Workers - Male"], label="Service-Male")
-plt.scatter(df["year"], df["Service & Sales Workers - Female"], label="Service-Female")
-plt.scatter(df["year"], df["Cleaners, Labourers & Related Workers - Male"], label="Cleaner-Male")
-plt.scatter(df["year"], df["Cleaners, Labourers & Related Workers - Female"], label="Cleaner-Female")
+plt.scatter(df["year"], df["Managers & Administrators (Including Working \
+                           Proprietors) - Male"], label="Manager-Male")
+plt.scatter(df["year"], df["Managers & Administrators (Including Working \
+                           Proprietors) - Female"], label="Manager-Female")
+plt.scatter(df["year"], df["Service & Sales Workers - Male"], label="Service-\
+            Male")
+plt.scatter(df["year"], df["Service & Sales Workers - Female"], label="Service\
+            -Female")
+plt.scatter(df["year"], df["Cleaners, Labourers & Related Workers - Male"], \
+            label="Cleaner-Male")
+plt.scatter(df["year"], df["Cleaners, Labourers & Related Workers - Female"], \
+            label="Cleaner-Female")
 plt.scatter(df["year"], df["Professionals - Male"], label="Manager-Male")
 plt.scatter(df["year"], df["Professionals - Female"], label="Manager-Female")
-plt.scatter(df["year"], df["Associate Professionals & Technicians - Male"], label="Service-Male")
-plt.scatter(df["year"], df["Associate Professionals & Technicians - Female"], label="Service-Female")
-plt.scatter(df["year"], df["Clerical Support Workers - Male"], label="Cleaner-Male")
-plt.scatter(df["year"], df["Clerical Support Workers - Female"], label="Cleaner-Female")
-plt.scatter(df["year"], df["Craftsmen & Related Trades Workers - Male"], label="Craftsmen-Male")
-plt.scatter(df["year"], df["Craftsmen & Related Trades Workers - Female"], label="Craftsmen-Female")
-plt.scatter(df["year"], df["Plant & Machine Operators & Assemblers - Male"], label="Plant & Machine-Male")
-plt.scatter(df["year"], df["Plant & Machine Operators & Assemblers - Female"], label="Plant & Machine-Female")
+plt.scatter(df["year"], df["Associate Professionals & Technicians - Male"], \
+            label="Service-Male")
+plt.scatter(df["year"], df["Associate Professionals & Technicians - Female"], \
+            label="Service-Female")
+plt.scatter(df["year"], df["Clerical Support Workers - Male"], \
+            label="Cleaner-Male")
+plt.scatter(df["year"], df["Clerical Support Workers - Female"], \
+            label="Cleaner-Female")
+plt.scatter(df["year"], df["Craftsmen & Related Trades Workers - Male"], \
+            label="Craftsmen-Male")
+plt.scatter(df["year"], df["Craftsmen & Related Trades Workers - Female"], \
+            label="Craftsmen-Female")
+plt.scatter(df["year"], df["Plant & Machine Operators & Assemblers - Male"], \
+            label="Plant & Machine-Male")
+plt.scatter(df["year"], df["Plant & Machine Operators & Assemblers - Female"],\
+            label="Plant & Machine-Female")
 
 # set labels and show the legend
 plt.xlabel("Year")
@@ -117,22 +150,42 @@ plt.show()
 plt.figure()
 
 # plot bar chart male vs female salary for their occupations
-plt.bar(df["year"] - 0.2, df["Managers & Administrators (Including Working Proprietors) - Male"], width=0.4, label="Manager-Male")
-plt.bar(df["year"] + 0.2, df["Managers & Administrators (Including Working Proprietors) - Female"], width=0.4, label="Manager-Female")
-plt.bar(df["year"] - 0.1, df["Service & Sales Workers - Male"], width=0.4, label="Service-Male")
-plt.bar(df["year"] + 0.1, df["Service & Sales Workers - Female"], width=0.4, label="Service-Female")
-plt.bar(df["year"] - 0.2, df["Cleaners, Labourers & Related Workers - Male"], width=0.4, label="Cleaner-Male")
-plt.bar(df["year"] + 0.2, df["Cleaners, Labourers & Related Workers - Female"], width=0.4, label="Cleaner-Female")
-plt.bar(df["year"] - 0.1, df["Professionals - Male"], width=0.4, label="Professional-Male")
-plt.bar(df["year"] + 0.1, df["Professionals - Female"], width=0.4, label="Professional-Female")
-plt.bar(df["year"] - 0.2, df["Associate Professionals & Technicians - Male"], width=0.4, label="Associate Professional-Male")
-plt.bar(df["year"] + 0.2, df["Associate Professionals & Technicians - Female"], width=0.4, label="Associate Professional-Female")
-plt.bar(df["year"] - 0.1, df["Clerical Support Workers - Male"], width=0.4, label="Clerical-Male")
-plt.bar(df["year"] + 0.1, df["Clerical Support Workers - Female"], width=0.4, label="Clerical-Female")
-plt.bar(df["year"] - 0.2, df["Craftsmen & Related Trades Workers - Male"], width=0.4, label="Craftsmen-Male")
-plt.bar(df["year"] + 0.2, df["Craftsmen & Related Trades Workers - Female"], width=0.4, label="Craftsmen-Female")
-plt.bar(df["year"] - 0.1, df["Plant & Machine Operators & Assemblers - Male"], width=0.4, label="Plant Operator-Male")
-plt.bar(df["year"] + 0.1, df["Plant & Machine Operators & Assemblers - Female"], width=0.4, label="Plant Operator-Female")
+plt.bar(df["year"] - 0.2, df["Managers & Administrators (Including Working \
+                             Proprietors) - Male"], width=0.4, label="Manager \
+                             -Male")
+plt.bar(df["year"] + 0.2, df["Managers & Administrators (Including Working \
+                             Proprietors) - Female"], width=0.4, label=\
+                             "Manager-Female")
+plt.bar(df["year"] - 0.1, df["Service & Sales Workers - Male"], width=0.4, \
+        label="Service-Male")
+plt.bar(df["year"] + 0.1, df["Service & Sales Workers - Female"], width=0.4, \
+        label="Service-Female")
+plt.bar(df["year"] - 0.2, df["Cleaners, Labourers & Related Workers - Male"], \
+        width=0.4, label="Cleaner-Male")
+plt.bar(df["year"] + 0.2, df["Cleaners, Labourers & Related Workers - \
+                             Female"], width=0.4, label="Cleaner-Female")
+plt.bar(df["year"] - 0.1, df["Professionals - Male"], width=0.4, \
+        label="Professional-Male")
+plt.bar(df["year"] + 0.1, df["Professionals - Female"], width=0.4, \
+        label="Professional-Female")
+plt.bar(df["year"] - 0.2, df["Associate Professionals & Technicians - Male"], \
+        width=0.4, label="Associate Professional-Male")
+plt.bar(df["year"] + 0.2, df["Associate Professionals & Technicians - \
+                             Female"], width=0.4, label="Associate \
+                                 Professional-Female")
+plt.bar(df["year"] - 0.1, df["Clerical Support Workers - Male"], width=0.4, \
+        label="Clerical-Male")
+plt.bar(df["year"] + 0.1, df["Clerical Support Workers - Female"], width=0.4, \
+        label="Clerical-Female")
+plt.bar(df["year"] - 0.2, df["Craftsmen & Related Trades Workers - Male"], \
+        width=0.4, label="Craftsmen-Male")
+plt.bar(df["year"] + 0.2, df["Craftsmen & Related Trades Workers - Female"], \
+        width=0.4, label="Craftsmen-Female")
+plt.bar(df["year"] - 0.1, df["Plant & Machine Operators & Assemblers - \
+                             Male"], width=0.4, label="Plant Operator-Male")
+plt.bar(df["year"] + 0.1, df["Plant & Machine Operators & Assemblers - \
+                             Female"], width=0.4, label="Plant \
+                                 Operator-Female")
 
 # set labels and show the legend
 plt.xlabel("Year")
