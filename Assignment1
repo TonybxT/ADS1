@@ -30,24 +30,26 @@ plt.plot(df["year"], df["Cleaners, Labourers & Related Workers - Male"],
          label="Cleaner-Male")
 plt.plot(df["year"], df["Cleaners, Labourers & Related Workers - Female"],
          label="Cleaner-Female")
-plt.plot(df["year"], df["Professionals - Male"], label="Manager-Male")
-plt.plot(df["year"], df["Professionals - Female"], label="Manager-Female")
+plt.plot(df["year"], df["Professionals - Male"], 
+         label="Professionals-Male")
+plt.plot(df["year"], df["Professionals - Female"], 
+         label="Professionals-Female")
 plt.plot(df["year"], df["Associate Professionals & Technicians - Male"],
-         label="Service-Male")
+         label="A Professional Tech-Male")
 plt.plot(df["year"], df["Associate Professionals & Technicians - Female"],
-         label="Service-Female")
+         label="A Professional Tech-Female")
 plt.plot(df["year"], df["Clerical Support Workers - Male"],
-         label="Cleaner-Male")
+         label="Clerical-Male")
 plt.plot(df["year"], df["Clerical Support Workers - Female"],
-         label="Cleaner-Female")
+         label="Clerical-Female")
 plt.plot(df["year"], df["Craftsmen & Related Trades Workers - Male"],
-         label="Cleaner-Female")
+         label="Craftsmen-Female")
 plt.plot(df["year"], df["Craftsmen & Related Trades Workers - Female"],
-         label="Cleaner-Female")
+         label="Craftsmen-Female")
 plt.plot(df["year"], df["Plant & Machine Operators & Assemblers - Male"],
-         label="Cleaner-Female")
+         label="Plant & Machhine-Female")
 plt.plot(df["year"], df["Plant & Machine Operators & Assemblers - Female"],
-         label="Cleaner-Female")
+         label="Plant & Machine-Female")
 
 # set labels and show the legend
 plt.xlabel("Year")
